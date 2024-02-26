@@ -1,0 +1,20 @@
+/* C Program to Calculate Grade Average */
+#include<stdio.h>
+float Calculate_Grade(float grade1, float grade2, float grade3, float
+grade4);
+int main()
+{
+
+float grade1, grade2, grade3, grade4, Grade;
+ printf("Enter 4 grade values for your course:\n");
+ scanf("%f%f%f%f",&grade1,&grade2,&grade3,&grade4);
+ Grade = Calculate_Grade(grade1, grade2, grade3, grade4);
+ printf("Your grade average is %f\n",Grade);
+ return 0;
+}
+float Calculate_Grade(float g1, float g2, float g3, float g4)
+{
+ float avg;
+ avg = (g1+g2+g3+g4)/4.0;
+ return avg;
+}
